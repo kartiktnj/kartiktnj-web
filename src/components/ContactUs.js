@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
 
-const form = document.querySelector('form');
+// const form = document.querySelector('form');
 export default class ContactUs extends Component {
   state = {
     fullName: '',
