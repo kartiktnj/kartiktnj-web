@@ -24,23 +24,12 @@ export default class About extends Component {
                   <div className="row">
 
                      <div className="columns contact-details">
-                        {/* <a href='#contact'><button>Contact Me</button></a> */}
                         <a href='#contact'><button class="learn-more">
                            <span class="circle" aria-hidden="true">
                               <span class="icon arrow"></span>
                            </span>
                            <span class="button-text">Contact Me</span>
                         </button></a>
-                        {/* <h2>Contact Details</h2>
-                  <p className="address">
-       						<span>{resumeData.name}</span>
-                     <br></br>
-       						   <span>
-                     {resumeData.address}
-                    </span>
-                    <br></br>
-                    <span>{resumeData.website}</span>
-       					   </p> */}
                      </div>
                   </div>
                </div>
