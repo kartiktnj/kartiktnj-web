@@ -4,7 +4,7 @@ let resumeData = {
   "role": "Full-Stack Developer",
   "linkedinId": "https://www.linkedin.com/in/kartiktnj/",
   "skypeid": "Your skypeid",
-  "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+  "roleDescription": ", I thrive on exploring the frontiers of both frontend and backend development. I'm passionate about adopting new technologies and refining my coding skills.\n Beyond coding, you'll find me on the football field, trekking through nature, or lost in the melodies of diverse music genres.\n Let's code together or kick back for a game of football sometime!",
   "socialLinks": [
     {
       "name": "linkedin",

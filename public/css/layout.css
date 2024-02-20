@@ -68,7 +68,7 @@ header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
    color: #A8A8A8;
    margin: 0 auto;
-   width: 70%;
+   width: 100%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
 header .banner-text h3 span,
@@ -119,7 +119,7 @@ header .scrolldown a {
 }
 header .scrolldown a:hover { color: #f06000; }
 
-header .profile-pic {
+header .logo {
    position: absolute;
    display: flex;
    flex-direction: row;
@@ -168,6 +168,7 @@ ul#nav {
    /* center align the menu */
    text-align: right;
 }
+
 ul#nav li {
    position: relative;
    list-style: none;
@@ -1079,7 +1080,7 @@ footer {
 }
 
 footer a, footer a:visited { color: #525252; }
-footer a:hover, footer a:focus { color: #fff; }
+footer a:hover, footer a:focus { color: #ffd49c; }
 
 /* copyright */
 footer .copyright {
@@ -1147,5 +1148,5 @@ footer .social-links li:first-child { margin-left: 0; }
    line-height: 60px;
  	border-radius: 100%;
 }
-#go-top a:hover { background-color: #0F9095; }
+#go-top a:hover { background-color: #F06000;}
 
