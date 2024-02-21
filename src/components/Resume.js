@@ -21,9 +21,6 @@ export default class Resume extends Component {
                       <p className="info">
                         {item.CompanyName}
                         <span>&bull;</span> <em className="date">{item.startDate} - {item.endDate}</em></p>
-                      {/* <p> */}
-                      {/* {item.description} */}
-                      {/* </p> */}
                       <ul className='description-point'>
                         {item.description.map((desc, index) => (
                           <li key={index}>{desc}</li>
@@ -53,7 +50,9 @@ export default class Resume extends Component {
                         {item.specialization}
                         <span>&bull;</span> <em className="date">{item.MonthOfPassing} {item.YearOfPassing}</em></p>
                       <p>
-                        {item.Achievements}
+                        {item.Achievements.map((desc, index) => (
+                          <li key={index}>{desc}</li>
+                        ))}
                       </p>
                     </div>
                   </div>

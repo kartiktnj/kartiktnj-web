@@ -53,16 +53,18 @@ let resumeData = {
     {
       "UniversityName": "Manipal University Jaipur",
       "specialization": "B.Tech. in Information Technology",
-      "MonthOfPassing": "Aug",
-      "YearOfPassing": "2020",
-      "Achievements": "Some Achievements"
+      "MonthOfPassing": "August",
+      "YearOfPassing": "2021",
+      "Achievements": ["Design Lead in Faraday Tech (a college incubated startup)",
+        "Treasurer of Cinefilia - The Dramatics and Film Making Society",
+        "Received the award for “Best Actor (Special Jury Mention)” in Blitzschlag 2020 at MNIT Jaipur."]
     },
     {
       "UniversityName": "Some University",
       "specialization": "Some specialization",
       "MonthOfPassing": "Jan",
       "YearOfPassing": "2018",
-      "Achievements": "Some Achievements"
+      "Achievements": ["Some Achievements"]
     }
   ],
   "skillsDescription": "Your skills here",
