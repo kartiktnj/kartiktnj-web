@@ -33,6 +33,7 @@ export default class Resume extends Component {
             }
           </div>
         </div>
+
         <div className="row education">
 
           <div className="three columns header-col">
@@ -67,9 +68,9 @@ export default class Resume extends Component {
             <h1><span>Skills</span></h1>
           </div>
           <div className="nine columns main-col">
-            <p>
-              {resumeData.skillsDescription}
-            </p>
+            {/* <p>
+          {resumeData.skillsDescription}
+        </p> */}
             <div className="bars">
               <ul className="skills">
                 {

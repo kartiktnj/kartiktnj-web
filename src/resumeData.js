@@ -59,13 +59,13 @@ let resumeData = {
         "Treasurer of Cinefilia - The Dramatics and Film Making Society",
         "Received the award for “Best Actor (Special Jury Mention)” in Blitzschlag 2020 at MNIT Jaipur."]
     },
-    {
-      "UniversityName": "Some University",
-      "specialization": "Some specialization",
-      "MonthOfPassing": "Jan",
-      "YearOfPassing": "2018",
-      "Achievements": ["Some Achievements"]
-    }
+    // {
+    //   "UniversityName": "Some University",
+    //   "specialization": "Some specialization",
+    //   "MonthOfPassing": "Jan",
+    //   "YearOfPassing": "2018",
+    //   "Achievements": ["Some Achievements"]
+    // }
   ],
   "skillsDescription": "Your skills here",
   "skills": [
@@ -77,12 +77,15 @@ let resumeData = {
     },
     {
       "skillname": "Reactjs"
+    },
+    {
+      "skillname": "Nodejs"
     }
   ],
   "portfolio": [
     {
-      "name": "project1",
-      "description": "mobileapp",
+      "name": "Node and Express Essentials",
+      "description": "Issued by edX, Authorised by IBM",
       "imgurl": "images/portfolio/phone.jpg"
     },
     {
