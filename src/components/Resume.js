@@ -1,11 +1,43 @@
 import React, { Component } from 'react';
 
 export default class Resume extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      showButton: false
+    };
+    this.resumeRef = React.createRef();
+  }
+
+  handleDownload = () => {
+    window.open('https://drive.google.com/file/d/18rRgtuUHuAl2XW9aKxhZlh7PVne5Z1m_/view?usp=sharing', '_blank');
+  }
+
+  componentDidMount() {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        this.setState({ showButton: entry.isIntersecting });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (this.resumeRef.current) {
+      observer.observe(this.resumeRef.current);
+    }
+  }
 
   render() {
     let resumeData = this.props.resumeData;
     return (
-      <section id="resume">
+      <section id="resume" ref={this.resumeRef}>
+        {this.state.showButton &&
+          <button className="download-button" onClick={this.handleDownload}>
+            <div className="circle">
+              <div className="icon arrow"></div>
+            </div>
+            <span className="button-text">Download Resume</span>
+          </button>
+        }
         <div className="row work">
           <div className="three columns header-col">
             <h1><span>Work</span></h1>

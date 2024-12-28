@@ -28,27 +28,32 @@ let resumeData = {
   "website": "",
   "work": [
     {
-      "CompanyName": "RSG Media",
+      "CompanyName": "RSG Media - A Rightsline Solution",
       "role": "Software Engineer",
       "startDate": "Sep 2021",
       "endDate": "Present",
-      "description": ["Engineered and optimized RESTful APIs with Node.js, Express, and PostgreSQL. Implemented advanced caching strategies, reducing API calls and significantly improving loading times for a more responsive and user-friendly application.",
-        "Developed UI/UX features using ReactJS with TypeScript, HTML, and CSS, contributing to an enhanced and visually appealing user interface.",
-        "Executed seamless multitenancy implementation, enhancing system scalability and efficiency while ensuring robust isolation for distinct user entities.",
-        "Revamped the outdated version of the application, originally built on the .NET framework. Successfully transitioned the development process to leverage the latest technologies, including ReactJS and NodeJS, with PostgreSQL as the database.",
-        "Mentored over 5 junior developers through our codebase, internal functions, imparting hands-on guidance and establishing best practices. Conducted code reviews to ensure quality and foster a collaborative learning environment.",
-        "Resolved priority bugs and client-requested features in existing applications, boosting overall functionality and efficiency. Ensured timely solutions for seamless integration and testing in upcoming releases."]
+      "description": ["Developed a file import module enabling batch processing of '.csv' and '.xlsx' files, with temporary storage in SQLite for validation and seamless insertion of clean data into PostgreSQL. The module ensures data integrity through API validations and provides real-time progress tracking with detailed error feedback for efficient troubleshooting.",
+        "Engineered and optimized various RESTful APIs with Node.js, Express, and PostgreSQL. Implemented advanced caching strategies, reducing API calls and significantly improving loading times for a more responsive application.",
+        "Developed UI/UX features using ReactJS, HTML, and CSS, contributing to an enhanced and visually appealing user interface.",
+        "Executed seamless multitenancy implementation, enhancing system scalability and efficiency while ensuring robust isolation for distinct user entities. This approach reduced overall license costs by leveraging a single code instance with separate databases for different clients.",
+        "Brainstormed and implemented a comprehensive solution to accelerate the build process, including replacing the JavaScript-based Babel transpiler with the Go-based esbuild and making significant enhancements to the webpack configuration, reducing build times from 20 minutes to 6 minutes and achieving a 75% improvement in productivity.",
+        "Revamped an outdated .NET-based application, transitioning to modern technologies like ReactJS, NodeJS, and PostgreSQL, while updating the UI to align with the latest design standards. Collaborated with cross-functional teams in an Agile/Scrum environment to ensure timely delivery and continuous improvement.",
+        "Resolved priority bugs and implemented client-requested features in existing applications, boosting overall functionality and efficiency. Ensured timely solutions for seamless integration and testing in upcoming releases.",
+        "Leadership Contributions: Mentored over 7 new developers, providing hands-on guidance, introducing best practices, and conducting code reviews to ensure quality and foster collaboration."]
     },
     {
       "CompanyName": "InterGlobe Technology Quotient",
       "role": "Software Engineering Intern",
       "startDate": "May 2019",
       "endDate": "July 2019",
-      "description": ["Designed and implemented a robust and secure login portal using Java, Servlets, and JSP technologies.",
-        "Established JDBC connections to MySQL, ensuring seamless data interaction, and deployed the portal on Apache Tomcat for optimal performance.",
-        "Developed responsive and intuitive user interfaces using a combination of HTML, CSS, and JavaScript to enhance the overall user experience."]
+      "description": ["Designed and implemented a secure login portal leveraging Java, Servlets, and JSP, providing a strong foundation for user authentication and data protection.",
+        "Established efficient JDBC connections to MySQL, facilitating seamless data retrieval and management, and deployed the portal on Apache Tomcat to ensure high performance and reliability.",
+        "Developed responsive, user-friendly interfaces using HTML, CSS, and JavaScript, improving accessibility and overall user satisfaction across devices.",
+        "Worked closely with senior team members to refine code structure and optimize application performance, gaining valuable insights into best practices in secure coding and server management.",
+        "Maintained detailed documentation of development processes, code changes, and troubleshooting steps to support future development and ease knowledge transfer."]
     }
   ],
+
   "education": [
     {
       "UniversityName": "Manipal University Jaipur",
@@ -59,13 +64,6 @@ let resumeData = {
         "Treasurer of Cinefilia - The Dramatics and Film Making Society",
         "Received the award for “Best Actor (Special Jury Mention)” in Blitzschlag 2020 at MNIT Jaipur."]
     },
-    // {
-    //   "UniversityName": "Some University",
-    //   "specialization": "Some specialization",
-    //   "MonthOfPassing": "Jan",
-    //   "YearOfPassing": "2018",
-    //   "Achievements": ["Some Achievements"]
-    // }
   ],
   "skillsDescription": "Your skills here",
   "skills": [
