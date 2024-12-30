@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 
-export default class Resume extends Component {
+class Resume extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showButton: false
+      showButton: false,
     };
     this.resumeRef = React.createRef();
-  }
-
-  handleDownload = () => {
-    window.open('https://drive.google.com/file/d/18rRgtuUHuAl2XW9aKxhZlh7PVne5Z1m_/view?usp=sharing', '_blank');
   }
 
   componentDidMount() {
@@ -26,18 +22,26 @@ export default class Resume extends Component {
     }
   }
 
+  handleDownload = () => {
+    window.open('https://drive.google.com/file/d/18rRgtuUHuAl2XW9aKxhZlh7PVne5Z1m_/view?usp=sharing', '_blank');
+  };
+
   render() {
-    let resumeData = this.props.resumeData;
+    const { resumeData } = this.props;
+    const { showButton } = this.state;
+
     return (
       <section id="resume" ref={this.resumeRef}>
-        {this.state.showButton &&
+        {showButton && (
           <button className="download-button" onClick={this.handleDownload}>
             <div className="circle">
-              <div className="icon arrow"></div>
+              <div className="download-icon centered-icon">
+                <i className="fas fa-file-download"></i>
+              </div>
             </div>
             <span className="button-text">Download Resume</span>
           </button>
-        }
+        )}
         <div className="row work">
           <div className="three columns header-col">
             <h1><span>Work</span></h1>
@@ -45,23 +49,22 @@ export default class Resume extends Component {
 
           <div className="nine columns main-col">
             {
-              resumeData.work && resumeData.work.map((item) => {
-                return (
-                  <div className="row item">
-                    <div className="twelve columns">
-                      <h3>{item.role}</h3>
-                      <p className="info">
-                        {item.CompanyName}
-                        <span>&bull;</span> <em className="date">{item.startDate} - {item.endDate}</em></p>
-                      <ul className='description-point'>
-                        {item.description.map((desc, index) => (
-                          <li key={index}>{desc}</li>
-                        ))}
-                      </ul>
-                    </div>
+              resumeData?.work?.map((item, index) => (
+                <div className="row item" key={index}>
+                  <div className="twelve columns">
+                    <h3>{item.role}</h3>
+                    <p className="info">
+                      {item.CompanyName}
+                      <span>&bull;</span> <em className="date">{item.startDate} - {item.endDate}</em>
+                    </p>
+                    <ul className='description-point'>
+                      {item.description.map((desc, descIndex) => (
+                        <li key={`${index}-${descIndex}`}>{desc}</li>
+                      ))}
+                    </ul>
                   </div>
-                )
-              })
+                </div>
+              ))
             }
           </div>
         </div>
@@ -123,3 +126,5 @@ export default class Resume extends Component {
     );
   }
 }
+
+export default Resume;

@@ -412,33 +412,13 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 10rem;
  }
  
- #resume .download-button .circle .icon {
-   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ #resume .download-button .circle .centered-icon {
    position: absolute;
-   top: 0;
-   bottom: 0;
-   margin: auto;
-   background: #fff;
- }
- 
- #resume .download-button .circle .icon.arrow {
-   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-   left: 15px;
-   width: 1.125rem;
-   height: 0.125rem;
-   background: none;
- }
- 
- #resume .download-button .circle .icon.arrow::before {
-   position: absolute;
-   content: '';
-   top: -0.25rem;
-   right: 0.0625rem;
-   width: 0.625rem;
-   height: 0.625rem;
-   border-top: 0.125rem solid #fff;
-   border-right: 0.125rem solid #fff;
-   transform: rotate(45deg);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.5rem;
+   color: #fff;
  }
  
  #resume .download-button .button-text {
@@ -448,7 +428,6 @@ ul#nav li.current a { color: #F06000; }
    left: 30px;
    right: 10px;
    bottom: 0;
-   /* padding-top: 12px; */
    margin: 0;
    color: #e98644;
    font-weight: 700;
@@ -462,13 +441,53 @@ ul#nav li.current a { color: #F06000; }
    background-color: #f06000;
  }
  
- #resume .download-button:hover .circle .icon.arrow {
-   background: #fff;
-   transform: translate(1rem, 0);
+ #resume .download-button:hover .circle .centered-icon {
+   transform: translate(-50%, -50%);
+   left:15%
  }
  
  #resume .download-button:hover .button-text {
    color: #fff;
+ }
+ 
+ @media (max-width: 768px) {
+   #resume .download-button {
+     left: auto;
+     top: auto;
+     right: 20px;
+     bottom: 20px;
+     transform: none;
+     width: 50px;
+     height: 50px;
+   }
+ 
+   #resume .download-button .circle {
+     width: 50px;
+     height: 50px;
+   }
+ 
+   #resume .download-button .circle .centered-icon {
+     left: 50%;
+     transform: translate(-50%, -50%);
+   }
+ 
+   #resume .download-button .button-text {
+     display: none;
+   }
+ 
+   #resume .download-button:hover .circle {
+     width: 50px;
+     height: 50px;
+     background-color: #e98644;
+   }
+ 
+   #resume .download-button:hover .circle .centered-icon {
+     transform: translate(-50%, -50%);
+   }
+ 
+   #resume .download-button:hover .button-text {
+     display: none;
+   }
  }
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -1222,4 +1241,3 @@ footer .social-links li:first-child { margin-left: 0; }
  	border-radius: 100%;
 }
 #go-top a:hover { background-color: #F06000;}
-

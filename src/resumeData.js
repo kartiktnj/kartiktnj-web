@@ -9,17 +9,17 @@ let resumeData = {
     {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/kartiktnj/",
-      "className": "fa fa-linkedin"
+      "className": "fa-brands fa-linkedin-in"
     },
     {
       "name": "github",
       "url": "http://github.com/kartiktnj",
-      "className": "fa fa-github"
+      "className": "fa-brands fa-github"
     },
     {
       "name": "skype",
       "url": "https://twitter.com/kartiktnj",
-      "className": "fa fa-twitter"
+      "className": "fa-brands fa-twitter"
     }
   ],
   "aboutme": "I am B.Tech Graduate from Manipal University Jaipur currently working as a Full Stack Engineer. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
